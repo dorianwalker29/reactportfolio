@@ -1,28 +1,26 @@
-import React from 'react';
-import Header from './components/Header';
+import React, { useState } from 'react';
+import Header from './layout/Header';
 import Content from './components/Content';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
+  const [selectedTitle, setSelectedTitle] = useState('About Me');
+
+  const handleTitleClick = (title) => {
+    setSelectedTitle(title);
+  };
+
   return (
-<div className="container">
-      <div className="row">
-        <div className="col-lg-12">
-          <Header />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-lg-12">
-          <Content />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-lg-12">
-          <Footer />
-        </div>
-      </div>
+    <div className="App">
+      <Header />
+      <Content handleTitleClick={handleTitleClick} selectedTitle={selectedTitle} />
+      <Footer />
     </div>
-  );}
+  );
+}
 
 export default App;

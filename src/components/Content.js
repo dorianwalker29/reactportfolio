@@ -1,46 +1,33 @@
 import React from 'react';
+import AboutMe from './AboutMe';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
+import Resume from './Resume';
 
-const AboutMe = () => {
+const Content = ({ selectedTitle }) => {
+  let section;
+  
+  switch (selectedTitle) {
+    case 'About Me':
+      section = <AboutMe />;
+      break;
+    case 'Portfolio':
+      section = <Portfolio />;
+      break;
+    case 'Contact':
+      section = <Contact />;
+      break;
+    case 'Resume':
+      section = <Resume />;
+      break;
+    default:
+      section = null;
+  }
+
   return (
     <div>
-      {/* Add the recent photo or avatar of the developer */}
-      {/* Add a short bio about the developer */}
-    </div>
-  );
-};
-
-const Portfolio = () => {
-  return (
-    <div>
-      {/* Display titled images of six applications */}
-      {/* Add links to deployed applications and GitHub repositories */}
-    </div>
-  );
-};
-
-const Contact = () => {
-  return (
-    <div>
-      {/* Display a contact form with fields for name, email, and message */}
-      {/* Implement form validation and notifications */}
-    </div>
-  );
-};
-
-const Resume = () => {
-  return (
-    <div>
-      {/* Add a link to a downloadable resume */}
-      {/* Display a list of the developer's proficiencies */}
-    </div>
-  );
-};
-
-const Content = () => {
-  // Logic to determine which section to render based on the selected navigation title
-  return (
-    <div>
-      {/* Render the corresponding section based on the selected navigation title */}
+      {/* Render the selected section */}
+      {section}
     </div>
   );
 };
