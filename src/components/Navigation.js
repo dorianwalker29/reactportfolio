@@ -6,7 +6,7 @@ const Navigation = () => {
       <ul style={navStyles}>
         <li><a href="#about" style={linkStyles}>About Me</a></li>
         <li><a href="#portfolio" style={linkStyles}>Portfolio</a></li>
-        <li><a href="#contact" style={linkStyles}>Contact</a></li>
+        <li><a href="#contact" style={linkStyles}>Contact</a></li> {/* Example contact link */}
         <li><a href="#resume" style={linkStyles}>Resume</a></li>
       </ul>
     </nav>
