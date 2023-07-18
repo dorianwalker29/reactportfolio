@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
+
 function App() {
   const [selectedTitle, setSelectedTitle] = useState('About Me');
 
