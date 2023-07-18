@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Contact.css';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -32,36 +33,39 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="contact-container">
       <h2>Contact</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
             type="text"
             id="name"
             value={name}
             onChange={handleNameChange}
+            className="form-control"
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="email">Email:</label>
           <input
             type="email"
             id="email"
             value={email}
             onChange={handleEmailChange}
+            className="form-control"
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="message">Message:</label>
           <textarea
             id="message"
             value={message}
             onChange={handleMessageChange}
+            className="form-control"
           ></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="submit-btn">Submit</button>
       </form>
     </div>
   );

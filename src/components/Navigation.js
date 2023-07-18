@@ -4,10 +4,10 @@ const Navigation = () => {
   return (
     <nav>
       <ul style={navStyles}>
-        <li><a href="#about" style={linkStyles}>About Me</a></li>
-        <li><a href="#portfolio" style={linkStyles}>Portfolio</a></li>
-        <li><a href="#contact" style={linkStyles}>Contact</a></li> {/* Example contact link */}
-        <li><a href="#resume" style={linkStyles}>Resume</a></li>
+        <li><a href="/" style={linkStyles}>About Me</a></li>
+        <li><a href="https://dorianwalker29.github.io/Dorian-Walker-Portfolio/" style={linkStyles}>Portfolio</a></li>
+        <li><a href="/contact" style={linkStyles}>Contact</a></li>
+        <li><a href="/resume" style={linkStyles}>Resume</a></li>
       </ul>
     </nav>
   );
