@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const dorianwalkerimage = require('../dorian4346.png');
+const dorianwalkerimage = require('../assets/dorian4346.png');
 
 const Bio = () => {
   return (
@@ -26,11 +26,11 @@ const BioCard = () => {
     <div className="mt-4 mr-auto mb-4 ml-auto bg-gray-900 max-w-lg">
       <div className="flex flex-col items-center pt-6 pr-6 pb-6 pl-6">
         <img src={dorianwalkerimage}
-          className="flex-shrink-0 object-cover object-center btn- flex w-16 h-16 mr-auto -mb-8 ml-auto rounded-full shadow-xl"
+          className="flex-shrink-0 object-cover object-center btn- flex w-64 h-64 mr-auto -mb-8 ml-auto rounded-full shadow-xl"
           alt="Dorian Walker"
         />
         <p className="mt-8 text-2xl font-semibold leading-none text-white tracking-tighter lg:text-3xl">
-          Dorian Walker
+          
         </p>
         <p className="mt-3 text-base leading-relaxed text-center text-gray-200">
           I am a fullstack software developer with skills in most languages and frameworks. I am also a sales professional with outstanding communication and interpersonal skills that will make me a great asset to your team!

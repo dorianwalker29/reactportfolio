@@ -4,6 +4,7 @@ const Contact = () => {
   return (
     <section className="py-16 bg-gray-800" id="contact">
       <div className="max-w-3xl mx-auto">
+      <h2 className="text-white text-3xl font-bold mb-8">Contact</h2>
         <form className="w-full max-w-lg">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full px-3">

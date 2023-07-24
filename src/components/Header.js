@@ -4,13 +4,13 @@ const Header = () => {
   const handleHomeClick = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // 'auto' for instant scroll
+      behavior: 'auto', // 'auto' for instant scroll
     });
   };
 
   return (
     <header className="bg-gray-700 text-white py-4 px-8 flex justify-between items-center fixed top-0 w-full">
-      <div className="text-xl font-bold">Dorian Walker</div>
+      <div className="text-xl font-bold">DW</div>
       <nav className="space-x-4">
         <a href="#home" onClick={handleHomeClick}>
           Home

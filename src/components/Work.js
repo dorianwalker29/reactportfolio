@@ -1,78 +1,96 @@
-// src/components/Work.js
 import React from 'react';
+import beer from '../assets/beer-traveler.jpg';
+import food from '../assets/foodbg.png';
 
-const Work = () => {
+
+const Works = () => {
   return (
-    <section className="py-16 bg-gray-800" id="work">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mt-12 mb-12">
-        <h2 className="text-2xl font-extrabold text-white">My Work</h2>
-        <section className="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
-          {/* First Work */}
-          <article className="bg-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200">
-            <div className="relative w-full h-80 md:h-64 lg:h-44">
-              <img src="https://cdn.pixabay.com/photo/2021/07/24/01/42/zebra-dove-6488440_960_720.jpg"
-                alt="Work 1"
-                className="w-full h-full object-center object-cover"
-              />
-            </div>
-            <div className="px-3 py-4">
-              <h3 className="text-sm text-gray-500 pb-2">
-                <a className="bg-indigo-600 py-1 px-2 text-white rounded-lg" href="#">
-                  <span className="absolute inset-0"></span>
-                  Basic Level
+    <div name='work' className='w-full md:h-screen text-gray-300 bg-gray-900'>
+      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div className='pb-8 w-full flex justify-center items-center flex-col'>
+          <p className='text-4xl font-bold inline '>
+            My Work
+          </p>
+          <p className='py-6 text-2xl'></p>
+        </div>
+{/* Container */}
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+            {/* Grid Item */}
+          <div
+            style={{ backgroundImage: `url(${beer})` }}
+            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+          >
+            {/* Hover Effects */}
+            <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
+              <span className=' text-lg font-bold text-white tracking-wider'>
+                Beer Traveler
+              </span>
+              <p className='text-center'>description</p>
+              <div className='pt-8 text-center'>
+                <a href='https://jkrieger6.github.io/beer-traveler/'>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                    Demo
+                  </button>
                 </a>
-              </h3>
-              <p className="text-base font-semibold text-gray-900 group-hover:text-indigo-600">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </p>
-            </div>
-          </article>
-
-          {/* Second Work */}
-          <article className="bg-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200">
-            <div className="relative w-full h-80 md:h-64 lg:h-44">
-              <img src="https://cdn.pixabay.com/photo/2021/09/08/20/45/bird-6607863_960_720.jpg.jpg"
-                alt="Work 2"
-                className="w-full h-full object-center object-cover"
-              />
-            </div>
-            <div className="px-3 py-4">
-              <h3 className="text-sm text-gray-500 pb-2">
-                <a className="bg-indigo-600 py-1 px-2 text-white rounded-lg" href="#">
-                  <span className="absolute inset-0"></span>
-                  Basic Level
+                <a href='https://github.com/jkrieger6/beer-traveler'>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                    Code
+                  </button>
                 </a>
-              </h3>
-              <p className="text-base font-semibold text-gray-900 group-hover:text-indigo-600">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </p>
+              </div>
             </div>
-          </article>
-
-          {/* Third Work */}
-          <article className="bg-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200">
-            <div className="relative w-full h-80 md:h-64 lg:h-44">
-              <img src="https://cdn.pixabay.com/photo/2021/08/03/11/01/stairs-6519085_960_720.jpg"
-                alt="Work 3"
-                className="w-full h-full object-center object-cover"
-              />
-            </div>
-            <div className="px-3 py-4">
-              <h3 className="text-sm text-gray-500 pb-2">
-                <a className="bg-indigo-600 py-1 px-2 text-white rounded-lg" href="#">
-                  <span className="absolute inset-0"></span>
-                  Intermediate Level
+          </div>
+          <div
+            style={{ backgroundImage: `url(${food})` }}
+            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+          >
+            {/* Hover Effects */}
+            <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
+              <span className=' text-lg font-bold text-white tracking-wider'>
+                The Recipe Drawer
+              </span>
+              <p className='text-center'>description</p>
+              <div className='pt-8 text-center'>
+                <a href='https://the-recipe-drawer.herokuapp.com/'>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                    Demo
+                  </button>
                 </a>
-              </h3>
-              <p className="text-base font-semibold text-gray-900 group-hover:text-indigo-600">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </p>
+                <a href='https://github.com/BigMikeNova/the-recipe-drawer'>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                    Code
+                  </button>
+                </a>
+              </div>
             </div>
-          </article>
-        </section>
-      </div>
-    </section>
+          </div>
+          <div
+            style={{ backgroundImage: `` }}
+            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+          >
+            {/* Hover Effects */}
+            <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
+              <span className=' text-lg font-bold text-white tracking-wider'>
+                BLANK
+              </span>
+              <p className='text-center'>BLANK</p>
+              <div className='pt-8 text-center'>
+                <a href='#'>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                    Demo
+                  </button>
+                </a>
+                <a href='#'>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>        
+</div>
   );
 };
-
-export default Work;
+export default Works;
