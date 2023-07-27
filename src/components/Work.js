@@ -28,12 +28,16 @@ const Works = () => {
               </span>
               <p className='text-center'>An application using API to find local breweries and forecast. </p>
               <div className='pt-8 text-center'>
-                <a href='https://jkrieger6.github.io/beer-traveler/'>
+                <a href='https://jkrieger6.github.io/beer-traveler/'
+                    target="_blank"
+                    rel="noopener noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href='https://github.com/jkrieger6/beer-traveler'>
+                <a href='https://github.com/jkrieger6/beer-traveler'
+                    target="_blank"
+                    rel="noopener noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
@@ -52,12 +56,16 @@ const Works = () => {
               </span>
               <p className='text-center'>A social media application for sharing food recipes.</p>
               <div className='pt-8 text-center'>
-                <a href='https://the-recipe-drawer.herokuapp.com/'>
+                <a href='https://the-recipe-drawer.herokuapp.com/'
+                    target="_blank"
+                    rel="noopener noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href='https://github.com/BigMikeNova/the-recipe-drawer'>
+                <a href='https://github.com/BigMikeNova/the-recipe-drawer'
+                    target="_blank"
+                    rel="noopener noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
@@ -76,12 +84,16 @@ const Works = () => {
               </span>
               <p className='text-center'>A personal portfolio using React.</p>
               <div className='pt-8 text-center'>
-                <a href='https://dorianwalker29.github.io/reactportfolio/'>
+                <a href='https://dorianwalker29.github.io/reactportfolio/'
+                    target="_blank"
+                    rel="noopener noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href='https://github.com/dorianwalker29/reactportfolio.git'>
+                <a href='https://github.com/dorianwalker29/reactportfolio.git'
+                    target="_blank"
+                    rel="noopener noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
