@@ -80,18 +80,18 @@ const Works = () => {
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
               <span className=' text-lg font-bold text-white tracking-wider'>
-                React Portfolio
+                Wanderlust
               </span>
-              <p className='text-center'>A personal portfolio using React.</p>
+              <p className='text-center'>A social media platform built with MERN Stack</p>
               <div className='pt-8 text-center'>
-                <a href='https://dorianwalker29.github.io/reactportfolio/'
+                <a href='https://github.com/BigMikeNova/travel-log/deployments/wanderlust-travel-log'
                     target="_blank"
                     rel="noopener noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href='https://github.com/dorianwalker29/reactportfolio.git'
+                <a href='https://github.com/BigMikeNova/travel-log.git'
                     target="_blank"
                     rel="noopener noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
